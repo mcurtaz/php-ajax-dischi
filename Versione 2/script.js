@@ -7,6 +7,7 @@ function init() {
 function getAlbums() {
   $.ajax({
     url: "data.php",
+    method: "GET",
     success: function(data){
       if (data["success"]) {
         var albums = data["response"];
