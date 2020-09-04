@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- cdn jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <!-- cdn handlebars -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js" integrity="sha512-zT3zHcFYbQwjHdKjCu6OMmETx8fJA9S7E6W7kBeFxultf75OPTYUJigEKX58qgyQMi1m1EgenfjMXlRZG8BXaw==" crossorigin="anonymous"></script>
+    <!-- link css -->
+    <link rel="stylesheet" href="master.css">
+    <!-- mio script -->
+    <script type="text/javascript" src="script.js"></script>
+
+    <title>PHP DISCHI</title>
+
+    <!-- template handlebars -->
+    <script id="template-handlebars" type="text/x-handlebars-template">
+      <div class="card">
+        <div class="card-img-wrapper">
+          <img src="{{poster}}" alt="poster">
+        </div>
+        <div class="card-txt">
+          <h3>{{title}}</h3>
+          <span><strong>Autore: </strong>{{author}}</span>
+          <span><strong>Genere: </strong>{{genre}}</span>
+          <span><strong>Anno: </strong>{{year}}</span>
+        </div>
+      </div>
+    </script>
+  </head>
+  <body>
+      <header>
+        <img src="img/logo.png" alt="logo">
+      </header>
+      <main id="albums-container">
+
+      </main>
+      <footer>
+
+      </footer>
+  </body>
+</html>
