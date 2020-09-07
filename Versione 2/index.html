@@ -17,10 +17,12 @@
     <script id="template-handlebars" type="text/x-handlebars-template">
       <div class="card">
         <div class="card-img-wrapper">
+          <!-- sostiutisco all url dell'immagine l'url mandato dal server che corrisponde all'url del poster dell'album -->
           <img src="{{poster}}" alt="poster">
         </div>
         <div class="card-txt">
           <h3>{{title}}</h3>
+          <!-- prendo e stampo le info mandate dal server -->
           <span><strong>Autore: </strong>{{author}}</span>
           <span><strong>Genere: </strong>{{genre}}</span>
           <span><strong>Anno: </strong>{{year}}</span>
@@ -31,6 +33,18 @@
   <body>
       <header>
         <img src="img/logo.png" alt="logo">
+        <div class="select-wrapper">
+          <label>Author</label>
+          <select id="author-select">
+            <option value="all" selected>All</option>
+            <option value="Bon Jovi">Bon Jovi</option>
+            <option value="Queen">Queen</option>
+            <option value="Sting">Sting</option>
+            <option value="Steve Gadd Band">Steve Gadd Band</option>
+            <option value="Iron Maiden">Iron Maiden</option>
+            <option value="Eric Clapton">Eric Clapton</option>
+          </select>
+        </div>
       </header>
       <main id="albums-container">
 

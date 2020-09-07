@@ -1,4 +1,5 @@
 <?php
+// semplicemente un array contenente i dati dei cd
 $data = [
     "success" => true,
     "response" => [
